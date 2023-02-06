@@ -1,0 +1,242 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&-logo {
+		font-weight: 500;
+		font-size: 2.5rem;
+		line-height: 3.2rem;
+		color: #ffffff;
+	}
+	&-menu {
+		width: 50rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		& > a {
+			font-family: "Space Grotesk";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 1.4rem;
+			line-height: 1.8rem;
+
+			color: #e5e5e5;
+			&:hover {
+				background: linear-gradient(
+					85.76deg,
+					rgba(191, 196, 238, 0.0945738) -105.02%,
+					#c367e6 10.94%,
+					rgba(190, 206, 239, 0) 121.57%
+				);
+				color: transparent;
+				-webkit-background-clip: text;
+				background-clip: text;
+			}
+		}
+	}
+	&-search {
+		width: 24.2rem;
+		height: 3rem;
+		border: 0.1rem solid #e5e5e5;
+		border-radius: 0.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		& input {
+			font-weight: 400;
+			font-size: 1.7rem;
+			line-height: 1.3rem;
+			color: #e5e5e5;
+		}
+		& a {
+			width: 0.8rem;
+			color: #ffffff;
+			position: absolute;
+			right: 4.18%;
+		}
+	}
+	&-icon div {
+		cursor: pointer;
+		margin-left: 0.5rem;
+		height: 4.5rem;
+		line-height: 4.5rem;
+		width: 4.5rem;
+		text-align: center;
+		font-size: 1.7rem;
+		color: $text-color;
+		border-radius: 0.5rem;
+		&:hover {
+			background: linear-gradient(
+				85.76deg,
+				rgba(191, 196, 238, 0.0945738) -105.02%,
+				#c367e6 10.94%,
+				rgba(190, 206, 239, 0) 121.57%
+			);
+			color: transparent;
+			-webkit-background-clip: text;
+			background-clip: text;
+		}
+	}
+	#menu-bars {
+		display: none;
+	}
+
+	&-button {
+		border-radius: 0.5rem;
+		width: 10rem;
+		height: 3rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: linear-gradient(
+			85.76deg,
+			rgba(191, 196, 238, 0.0945738) -105.02%,
+			#c367e6 10.94%,
+			rgba(190, 206, 239, 0) 121.57%
+		);
+		border-radius: 5px;
+		cursor: pointer;
+		&-link {
+			font-family: "Space Grotesk";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 1rem;
+			line-height: 1.3rem;
+			background: none;
+			color: #e5e5e5;
+		}
+	}
+}
+.header .search-form {
+	position: absolute;
+	top: 10%;
+	right: -100%;
+	width: 35rem;
+	height: 4rem;
+	background: #fff;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	& input {
+		background-color: #fff;
+		padding-left: 2.5rem;
+		width: 100%;
+		height: 100%;
+	}
+	& label {
+		font-size: 1.5rem;
+		background-color: #fff;
+		padding-right: 1.5rem;
+		&:hover {
+			background: linear-gradient(
+				85.76deg,
+				rgba(191, 196, 238, 0.0945738) -105.02%,
+				#c367e6 10.94%,
+				rgba(190, 206, 239, 0) 121.57%
+			);
+			color: transparent;
+			-webkit-background-clip: text;
+			background-clip: text;
+		}
+	}
+}
+.header .search-form.active {
+	right: 30rem;
+	transition: 0.4s linear;
+}
+.container {
+	width: 100%;
+	height: 49.4rem;
+	margin-top: 7.7rem;
+	display: flex;
+	justify-content: space-between;
+	&-left {
+		width: 40rem;
+		&-title {
+			font-family: "Space Grotesk";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 6rem;
+			line-height: 7.7rem;
+			color: #ffffff;
+		}
+		&-desc {
+			width: 300px;
+			height: 40px;
+			font-family: "Poppins";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 13px;
+			line-height: 20px;
+			color: $text-color;
+			margin-top: 1.2rem;
+		}
+		&-button {
+			margin-top: 1.2rem;
+			width: 199px;
+			height: 40px;
+			background: linear-gradient(
+				85.76deg,
+				rgba(191, 196, 238, 0.0945738) -105.02%,
+				#c367e6 10.94%,
+				rgba(190, 206, 239, 0) 121.57%
+			);
+			border-radius: 5px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			justify-content: center;
+			font-size: 16px;
+			line-height: 20px;
+			color: #e5e5e5;
+			cursor: pointer;
+		}
+		&-list {
+			display: flex;
+			width: 100%;
+			height: 46px;
+			justify-content: space-between;
+			margin-top: 8.7rem;
+			&-box {
+				width: 8.7rem;
+				height: 6rem;
+				text-align: centers;
+				& > h1 {
+					font-family: "Space Grotesk";
+					font-style: normal;
+					font-weight: 700;
+					font-size: 36px;
+					line-height: 46px;
+					color: $text-color;
+				}
+				& > p {
+					width: 68px;
+					height: 15px;
+					font-family: "Space Grotesk";
+					font-style: normal;
+					font-weight: 700;
+					font-size: 12px;
+					line-height: 15px;
+					color: #e5e5e5;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+.sponsor {
+	padding: 1rem;
+	right: 0;
+	margin-right: 63.29px;
+	margin-top: 52px;
+	margin-bottom: 5.6rem;
+	width: 100%;
+	padding-left: 68rem;
+	& > img {
+		padding-right: 31.29px;
+	}
+}

@@ -1,0 +1,129 @@
+@media screen and (max-width: 991px) {
+	html {
+		font-size: 55%;
+	}
+	.header {
+		&-menu {
+			padding: 1.5rem;
+		}
+	}
+	.header-icon {
+		display: flex;
+	}
+	.container-right-img {
+		width: 100%;
+	}
+	.container-left {
+		width: 75%;
+	}
+	.container-left-list {
+		margin-top: 0;
+		width: 90%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.header-icon #menu-bars {
+		display: inline-block;
+	}
+	.header-menu {
+		position: absolute;
+		width: 100%;
+		top: 10%;
+		left: 0;
+		right: 0;
+		background: #fff;
+		border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+		display: block;
+		border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+		&.active {
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		}
+	}
+	header .header-menu a {
+		display: block;
+		padding: 1.5rem;
+		background: #eee;
+		color: #3b5971;
+		margin-top: 1rem;
+		&:hover {
+			background: linear-gradient(
+				85.76deg,
+				rgba(191, 196, 238, 0.0945738) -105.02%,
+				#c367e6 10.94%,
+				rgba(190, 206, 239, 0) 121.57%
+			);
+			color: #ffffff;
+		}
+	}
+	.header .search-form.active {
+		right: 7rem;
+	}
+	.container-left {
+		width: 100%;
+	}
+	.container-right {
+		margin-top: 5rem;
+		width: 100%;
+	}
+	.container-left-button {
+		margin-top: 5rem;
+	}
+	.container-left-list {
+		margin-top: 10rem;
+	}
+	.sponsor {
+		display: flex;
+		margin-left: -250px;
+		margin-top: 10rem;
+		& img {
+			width: 10rem;
+		}
+	}
+	.footer {
+		gap: 2rem;
+	}
+}
+@media screen and (max-width: 426px) {
+	.container-left-button {
+		margin-top: 5rem;
+	}
+	.container-left-list {
+		margin-top: 10rem;
+	}
+	.sponsor {
+		margin-top: 65rem;
+		& img {
+			width: 11rem;
+		}
+	}
+	.container {
+		display: block;
+	}
+	.sponsor {
+		display: flex;
+		margin-left: -600px;
+		margin-top: 60rem;
+		& img {
+			width: 10rem;
+		}
+	}
+	.community {
+		&-title {
+			display: flex;
+			margin-top: -50px;
+			width: 50rem;
+			margin-left: -100px;
+		}
+		&-decs {
+			display: flex;
+			margin-left: -8rem;
+			align-items: center;
+			width: 20rem;
+		}
+		&-button {
+			position: absolute;
+			left: 14rem;
+		}
+	}
+}
